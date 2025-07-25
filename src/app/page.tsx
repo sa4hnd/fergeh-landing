@@ -57,38 +57,38 @@ export default function Home() {
       {/* Themed Background Elements - more visible, larger, more variety, responsive */}
       <div className="absolute inset-0 pointer-events-none select-none z-0">
         {/* Biology */}
-        <div className="absolute top-10 left-4 text-primary-gradient text-3xl md:text-5xl opacity-20 font-extrabold drop-shadow-lg rotate-[-8deg]">DNA</div>
-        <div className="absolute top-32 left-24 text-primary-gradient text-lg md:text-2xl opacity-25 italic drop-shadow-md">cell</div>
-        <div className="absolute top-56 left-8 text-primary-gradient text-xl md:text-3xl opacity-20 font-semibold drop-shadow-md rotate-6">ATP</div>
-        <div className="absolute top-24 left-1/2 text-primary-gradient text-lg md:text-2xl opacity-20 font-light drop-shadow-md -translate-x-1/2">leaf</div>
+        <div className="absolute top-10 left-4 text-primary-gradient text-3xl md:text-5xl opacity-10 font-extrabold drop-shadow-lg rotate-[-8deg]">DNA</div>
+        <div className="absolute top-32 left-24 text-primary-gradient text-lg md:text-2xl opacity-10 italic drop-shadow-md">cell</div>
+        <div className="absolute top-56 left-8 text-primary-gradient text-xl md:text-3xl opacity-10 font-semibold drop-shadow-md rotate-6">ATP</div>
+        <div className="absolute top-24 left-1/2 text-primary-gradient text-lg md:text-2xl opacity-10 font-light drop-shadow-md -translate-x-1/2">leaf</div>
         {/* Chemistry */}
-        <div className="absolute top-2/3 left-10 text-primary-gradient text-2xl md:text-4xl opacity-25 font-mono drop-shadow-lg rotate-3">H₂O</div>
-        <div className="absolute top-20 right-16 text-primary-gradient text-2xl md:text-4xl opacity-20 font-mono drop-shadow-lg">NaCl</div>
-        <div className="absolute top-1/2 right-8 text-primary-gradient text-lg md:text-2xl opacity-20 font-mono drop-shadow-md">CH₄</div>
-        <div className="absolute top-3/4 right-24 text-primary-gradient text-base md:text-xl opacity-20 font-mono drop-shadow">C₆H₁₂O₆</div>
-        <div className="absolute top-16 right-1/4 text-primary-gradient text-3xl md:text-5xl opacity-20 font-mono drop-shadow-lg rotate-12">⚗</div>
+        <div className="absolute top-2/3 left-10 text-primary-gradient text-2xl md:text-4xl opacity-10 font-mono drop-shadow-lg rotate-3">H₂O</div>
+        <div className="absolute top-20 right-16 text-primary-gradient text-2xl md:text-4xl opacity-10 font-mono drop-shadow-lg">NaCl</div>
+        <div className="absolute top-1/2 right-8 text-primary-gradient text-lg md:text-2xl opacity-10 font-mono drop-shadow-md">CH₄</div>
+        <div className="absolute top-3/4 right-24 text-primary-gradient text-base md:text-xl opacity-10 font-mono drop-shadow">C₆H₁₂O₆</div>
+        <div className="absolute top-16 right-1/4 text-primary-gradient text-3xl md:text-5xl opacity-10 font-mono drop-shadow-lg rotate-12">⚗</div>
         {/* Kurdish/Arabic */}
-        <div className="absolute top-96 right-12 text-primary-gradient text-2xl md:text-4xl opacity-25 font-bold drop-shadow-lg">کوردی</div>
-        <div className="absolute top-80 left-32 text-primary-gradient text-xl md:text-3xl opacity-20 font-bold drop-shadow">عربي</div>
-        <div className="absolute top-1/2 left-8 text-primary-gradient text-lg md:text-2xl opacity-20 font-bold drop-shadow-md">ئ</div>
-        <div className="absolute bottom-1/3 left-16 text-primary-gradient text-xl md:text-3xl opacity-20 font-bold drop-shadow">بەخێربێیت</div>
-        <div className="absolute bottom-48 left-32 text-primary-gradient text-base md:text-xl opacity-20 font-bold drop-shadow">كتاب</div>
-        <div className="absolute bottom-24 left-48 text-primary-gradient text-lg md:text-2xl opacity-20 font-bold drop-shadow">ش</div>
+        <div className="absolute top-96 right-12 text-primary-gradient text-2xl md:text-4xl opacity-10 font-bold drop-shadow-lg">کوردی</div>
+        <div className="absolute top-80 left-32 text-primary-gradient text-xl md:text-3xl opacity-10 font-bold drop-shadow">عربي</div>
+        <div className="absolute top-1/2 left-8 text-primary-gradient text-lg md:text-2xl opacity-10 font-bold drop-shadow-md">ئ</div>
+        <div className="absolute bottom-1/3 left-16 text-primary-gradient text-xl md:text-3xl opacity-10 font-bold drop-shadow">بەخێربێیت</div>
+        <div className="absolute bottom-48 left-32 text-primary-gradient text-base md:text-xl opacity-10 font-bold drop-shadow">كتاب</div>
+        <div className="absolute bottom-24 left-48 text-primary-gradient text-lg md:text-2xl opacity-10 font-bold drop-shadow">ش</div>
         {/* History */}
-        <div className="absolute top-1/3 right-24 text-primary-gradient text-2xl md:text-4xl opacity-20 font-serif drop-shadow-lg rotate-3">1453</div>
-        <div className="absolute top-1/2 right-48 text-primary-gradient text-base md:text-xl opacity-20 font-serif drop-shadow">Mesopotamia</div>
-        <div className="absolute top-2/3 right-16 text-primary-gradient text-lg md:text-2xl opacity-20 font-serif drop-shadow">scroll</div>
-        <div className="absolute bottom-1/3 right-32 text-primary-gradient text-2xl md:text-4xl opacity-20 font-serif drop-shadow-lg">🏺</div>
-        <div className="absolute bottom-48 right-48 text-primary-gradient text-lg md:text-2xl opacity-20 font-serif drop-shadow">📜</div>
+        <div className="absolute top-1/3 right-24 text-primary-gradient text-2xl md:text-4xl opacity-10 font-serif drop-shadow-lg rotate-3">1453</div>
+        <div className="absolute top-1/2 right-48 text-primary-gradient text-base md:text-xl opacity-10 font-serif drop-shadow">Mesopotamia</div>
+        <div className="absolute top-2/3 right-16 text-primary-gradient text-lg md:text-2xl opacity-10 font-serif drop-shadow">scroll</div>
+        <div className="absolute bottom-1/3 right-32 text-primary-gradient text-2xl md:text-4xl opacity-10 font-serif drop-shadow-lg">🏺</div>
+        <div className="absolute bottom-48 right-48 text-primary-gradient text-lg md:text-2xl opacity-10 font-serif drop-shadow">📜</div>
         {/* Math/Science (a few for variety) */}
-        <div className="absolute bottom-24 left-1/2 text-primary-gradient text-2xl md:text-4xl opacity-25 font-mono drop-shadow-lg -translate-x-1/2">π</div>
-        <div className="absolute top-1/4 left-1/2 text-primary-gradient text-xl md:text-3xl opacity-20 font-mono drop-shadow -translate-x-1/2">Σ</div>
-        <div className="absolute top-1/3 left-2/3 text-primary-gradient text-xl md:text-3xl opacity-20 font-mono drop-shadow">∫</div>
-        <div className="absolute top-2/3 left-1/3 text-primary-gradient text-base md:text-xl opacity-20 font-mono drop-shadow">f(x)</div>
-        <div className="absolute bottom-1/4 left-2/3 text-primary-gradient text-xl md:text-3xl opacity-20 font-mono drop-shadow">E = mc²</div>
-        <div className="absolute top-3/4 left-1/4 text-primary-gradient text-base md:text-xl opacity-20 font-mono drop-shadow">dx</div>
+        <div className="absolute bottom-24 left-1/2 text-primary-gradient text-2xl md:text-4xl opacity-10 font-mono drop-shadow-lg -translate-x-1/2">π</div>
+        <div className="absolute top-1/4 left-1/2 text-primary-gradient text-xl md:text-3xl opacity-10 font-mono drop-shadow -translate-x-1/2">Σ</div>
+        <div className="absolute top-1/3 left-2/3 text-primary-gradient text-xl md:text-3xl opacity-10 font-mono drop-shadow">∫</div>
+        <div className="absolute top-2/3 left-1/3 text-primary-gradient text-base md:text-xl opacity-10 font-mono drop-shadow">f(x)</div>
+        <div className="absolute bottom-1/4 left-2/3 text-primary-gradient text-xl md:text-3xl opacity-10 font-mono drop-shadow">E = mc²</div>
+        <div className="absolute top-3/4 left-1/4 text-primary-gradient text-base md:text-xl opacity-10 font-mono drop-shadow">dx</div>
         {/* Subtle emoji for variety */}
-        <div className="absolute top-40 left-1/2 text-primary-gradient text-2xl md:text-4xl opacity-15 drop-shadow -translate-x-1/2">🧬</div>
+        <div className="absolute top-40 left-1/2 text-primary-gradient text-2xl md:text-4xl opacity-5 drop-shadow -translate-x-1/2">🧬</div>
       </div>
 
       {/* Hero Section */}
