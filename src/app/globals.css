@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --teslearn-blue: #439eed;
+  --primary-gradient-start: #5149e5;
+  --primary-gradient-end: #837cf4;
   --teslearn-dark: #16283c;
   --teslearn-bg: #fbfbfb;
   --teslearn-gray: #98a0a8;
@@ -38,6 +39,21 @@ body {
 
 .bg-teslearn-bg {
   background-color: var(--teslearn-bg);
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
+}
+.text-primary-gradient {
+  background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.ibm-plex-arabic-font {
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
 }
 
 @layer base {
