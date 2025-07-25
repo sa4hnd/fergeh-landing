@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teslearn-blue: #439eed;
+  --teslearn-dark: #16283c;
+  --teslearn-bg: #fbfbfb;
+  --teslearn-gray: #98a0a8;
+  --teslearn-light-blue: #cad4db;
+}
+
+body {
+  font-family: inherit;
+  background-color: var(--teslearn-bg);
+  background-image:
+    radial-gradient(circle, #e2e8f0 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: var(--teslearn-dark);
+  overflow-x: hidden;
+}
+
+.text-teslearn-blue {
+  color: var(--teslearn-blue);
+}
+
+.bg-teslearn-blue {
+  background-color: var(--teslearn-blue);
+}
+
+.text-teslearn-dark {
+  color: var(--teslearn-dark);
+}
+
+.text-teslearn-gray {
+  color: var(--teslearn-gray);
+}
+
+.bg-teslearn-bg {
+  background-color: var(--teslearn-bg);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
