@@ -2,6 +2,7 @@
 
 import { FaApple, FaAndroid } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import { FaTelegramPlane } from "react-icons/fa";
 
 type Lang = "en" | "ku" | "ar";
 
@@ -13,6 +14,7 @@ const translations: Record<Lang, {
   android: string;
   badge: string;
   coming: string;
+  telegram: string;
 }> = {
   en: {
     title: "Fergeh",
@@ -22,6 +24,7 @@ const translations: Record<Lang, {
     android: "Download for Android",
     badge: "people are using Fergeh",
     coming: "Coming this week",
+    telegram: "Join our Telegram @fergehh",
   },
   ku: {
     title: "فێرگە",
@@ -31,6 +34,7 @@ const translations: Record<Lang, {
     android: "دابەزاندن بۆ Android",
     badge: "کەس فێرگە بە کاردێنن",
     coming: "ئەم هەفتە دێت",
+    telegram: "بەشداربە لە تێلەگراممان @fergehh",
   },
   ar: {
     title: "فرقە",
@@ -40,6 +44,7 @@ const translations: Record<Lang, {
     android: "تنزيل لـ Android",
     badge: "شخص يستخدمون فرقە",
     coming: "قادم هذا الأسبوع",
+    telegram: "انضم إلى قناتنا على تيليجرام @fergehh",
   },
 };
 
@@ -158,10 +163,19 @@ export default function Home() {
             <FaAndroid className="text-3xl" />
           </button>
         </div>
-        <div className="mt-2 text-center w-full">
+        <div className="flex flex-col items-center w-full mt-2 gap-2">
           <span className="inline-block bg-yellow-100 text-yellow-800 rounded-full px-4 py-1 text-base font-medium shadow-sm">
             {t.coming}
           </span>
+          <a
+            href="https://t.me/fergehh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row items-center gap-3 bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:bg-blue-600 transition-colors w-full sm:w-auto justify-center"
+          >
+            <FaTelegramPlane className="text-2xl" />
+            {t.telegram}
+          </a>
         </div>
       </section>
     </div>
