@@ -12,6 +12,7 @@ const translations: Record<Lang, {
   ios: string;
   android: string;
   badge: string;
+  coming: string;
 }> = {
   en: {
     title: "Fergeh",
@@ -20,6 +21,7 @@ const translations: Record<Lang, {
     ios: "Download for iOS",
     android: "Download for Android",
     badge: "people are using Fergeh",
+    coming: "Coming this week",
   },
   ku: {
     title: "فێرگە",
@@ -28,6 +30,7 @@ const translations: Record<Lang, {
     ios: "دابەزاندن بۆ iOS",
     android: "دابەزاندن بۆ Android",
     badge: "کەس فێرگە بە کاردێنن",
+    coming: "ئەم هەفتە دێت",
   },
   ar: {
     title: "فرقە",
@@ -36,6 +39,7 @@ const translations: Record<Lang, {
     ios: "تنزيل لـ iOS",
     android: "تنزيل لـ Android",
     badge: "شخص يستخدمون فرقە",
+    coming: "قادم هذا الأسبوع",
   },
 };
 
@@ -145,15 +149,19 @@ export default function Home() {
             {t.ios}
             <FaApple className="text-3xl" />
           </a>
-          <a
-            href="https://github.com/sa4hnd/fergeh-landing/releases/download/Download/Fergeh.apk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-row items-center gap-3 bg-teslearn-dark text-white px-10 py-5 rounded-xl font-semibold text-xl shadow-xl hover:bg-gray-800 hover:scale-105 active:scale-95 transition-all w-full sm:w-auto justify-center"
+          <button
+            disabled
+            className="flex flex-row items-center gap-3 bg-gray-300 text-gray-500 px-10 py-5 rounded-xl font-semibold text-xl shadow-xl w-full sm:w-auto justify-center cursor-not-allowed opacity-60"
+            style={{ pointerEvents: 'none' }}
           >
             {t.android}
             <FaAndroid className="text-3xl" />
-          </a>
+          </button>
+        </div>
+        <div className="mt-2 text-center w-full">
+          <span className="inline-block bg-yellow-100 text-yellow-800 rounded-full px-4 py-1 text-base font-medium shadow-sm">
+            {t.coming}
+          </span>
         </div>
       </section>
     </div>
