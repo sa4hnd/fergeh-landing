@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { FaTrash, FaUser, FaEnvelope, FaShieldAlt, FaCheckCircle } from "react-icons/fa";
 
 type Lang = "en" | "ku" | "ar";
@@ -132,12 +133,12 @@ export default function DataDeletionPage() {
           </div>
           <h2 className="text-2xl font-bold text-teslearn-dark mb-4">{t.successTitle}</h2>
           <p className="text-teslearn-gray mb-8 leading-relaxed">{t.successMessage}</p>
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2 bg-primary-gradient text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity"
           >
             {t.backButton}
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -311,12 +312,12 @@ export default function DataDeletionPage() {
 
           {/* Back to Home */}
           <div className="text-center mt-12">
-            <a
+            <Link
               href="/"
               className="inline-flex items-center gap-2 text-teslearn-gray hover:text-teslearn-dark transition-colors"
             >
               ← {t.backButton}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

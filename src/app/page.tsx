@@ -3,6 +3,7 @@
 import { FaApple, FaAndroid } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { FaTelegramPlane } from "react-icons/fa";
+import Link from "next/link";
 
 type Lang = "en" | "ku" | "ar";
 
@@ -181,12 +182,12 @@ export default function Home() {
         {/* Footer Links */}
         <div className="mt-8 pt-8 border-t border-gray-200 w-full max-w-md">
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-sm text-teslearn-gray">
-            <a
+            <Link
               href="/data-deletion"
               className="hover:text-teslearn-dark transition-colors underline"
             >
               {lang === "en" ? "Data Deletion Request" : lang === "ku" ? "داواکاری سڕینەوەی داتا" : "طلب حذف البيانات"}
-            </a>
+            </Link>
             <span className="hidden sm:inline">•</span>
             <a
               href="mailto:privacy@fergeh.app"
